@@ -31,5 +31,13 @@ namespace assignment5
             this.tableAdapterManager.UpdateAll(this.personDBDataSet);
 
         }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.personBindingSource.EndEdit();
+
+            this.tableAdapterManager.UpdateAll(this.personDBDataSet);
+        }
     }
 }
