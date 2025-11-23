@@ -52,8 +52,23 @@ namespace assignment5
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            AddForm addForm = new AddForm();
-            addForm.ShowDialog();
+            using (var addForm = new AddForm())
+            {
+                if (addForm.ShowDialog() == DialogResult.OK)
+                {
+                    var newRow = personDBDataSet.Person.NewPersonRow();
+                    newRow.Name = addForm.Name;
+                    newRow.Phone = addForm.Phone;
+
+                    personDBDataSet.Person.Rows.Add(newRow);
+
+                    this.Validate();
+                    this.personBindingSource.EndEdit();
+                    this.personTableAdapter.Update(this.personDBDataSet.Person);
+
+                    this.personTableAdapter.Fill(this.personDBDataSet.Person);
+                }
+            }
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.ageLabel = new System.Windows.Forms.Label();
-            this.ageTextBox = new System.Windows.Forms.TextBox();
+            this.phoneLabel = new System.Windows.Forms.Label();
+            this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -52,22 +52,22 @@
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 1;
             // 
-            // ageLabel
+            // phoneLabel
             // 
-            this.ageLabel.AutoSize = true;
-            this.ageLabel.Location = new System.Drawing.Point(72, 118);
-            this.ageLabel.Name = "ageLabel";
-            this.ageLabel.Size = new System.Drawing.Size(26, 13);
-            this.ageLabel.TabIndex = 2;
-            this.ageLabel.Text = "&Age";
-            this.ageLabel.Click += new System.EventHandler(this.ageLabel_Click);
+            this.phoneLabel.AutoSize = true;
+            this.phoneLabel.Location = new System.Drawing.Point(72, 118);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(38, 13);
+            this.phoneLabel.TabIndex = 2;
+            this.phoneLabel.Text = "&Phone";
+            this.phoneLabel.Click += new System.EventHandler(this.ageLabel_Click);
             // 
-            // ageTextBox
+            // phoneTextBox
             // 
-            this.ageTextBox.Location = new System.Drawing.Point(75, 134);
-            this.ageTextBox.Name = "ageTextBox";
-            this.ageTextBox.Size = new System.Drawing.Size(100, 20);
-            this.ageTextBox.TabIndex = 3;
+            this.phoneTextBox.Location = new System.Drawing.Point(75, 134);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.phoneTextBox.TabIndex = 3;
             // 
             // okButton
             // 
@@ -96,8 +96,8 @@
             this.ClientSize = new System.Drawing.Size(463, 305);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
-            this.Controls.Add(this.ageTextBox);
-            this.Controls.Add(this.ageLabel);
+            this.Controls.Add(this.phoneTextBox);
+            this.Controls.Add(this.phoneLabel);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.nameLabel);
             this.MaximizeBox = false;
@@ -113,8 +113,8 @@
 
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.Label ageLabel;
-        private System.Windows.Forms.TextBox ageTextBox;
+        private System.Windows.Forms.Label phoneLabel;
+        private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
     }

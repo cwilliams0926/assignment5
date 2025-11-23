@@ -13,17 +13,7 @@ namespace assignment5
     public partial class AddForm : Form
     {
         public string Name => nameTextBox.Text;
-        public int? Age
-        {
-            get
-            {
-                if (int.TryParse(ageTextBox.Text, out int age))
-                {
-                    return age;
-                }
-                return null;
-            }
-        }
+        public string Phone => phoneTextBox.Text;
         public AddForm()
         {
             InitializeComponent();
