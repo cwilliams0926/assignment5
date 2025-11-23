@@ -210,6 +210,8 @@
             // 
             // personDataGridView
             // 
+            this.personDataGridView.AllowUserToAddRows = false;
+            this.personDataGridView.AllowUserToDeleteRows = false;
             this.personDataGridView.AutoGenerateColumns = false;
             this.personDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.personDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -219,6 +221,7 @@
             this.personDataGridView.DataSource = this.personBindingSource;
             this.personDataGridView.Location = new System.Drawing.Point(21, 42);
             this.personDataGridView.Name = "personDataGridView";
+            this.personDataGridView.ReadOnly = true;
             this.personDataGridView.Size = new System.Drawing.Size(365, 239);
             this.personDataGridView.TabIndex = 1;
             // 
