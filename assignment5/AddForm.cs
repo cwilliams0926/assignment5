@@ -16,5 +16,10 @@ namespace assignment5
         {
             InitializeComponent();
         }
+
+        private void ageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
