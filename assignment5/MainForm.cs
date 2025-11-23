@@ -24,6 +24,7 @@ namespace assignment5
 
         }
 
+        // Navigator is gone but this is still here
         private void personBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -42,7 +43,7 @@ namespace assignment5
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            personBindingSource.RemoveCurrent();
+            personBindingSource.RemoveCurrent(); // removes current row
 
             this.Validate();
             this.personBindingSource.EndEdit(); 
@@ -56,6 +57,7 @@ namespace assignment5
             {
                 if (addForm.ShowDialog() == DialogResult.OK)
                 {
+                    // Create a new row with the data from the add form
                     var newRow = personDBDataSet.Person.NewPersonRow();
                     newRow.Name = addForm.PersonName;
                     newRow.Phone = addForm.Phone;
@@ -66,6 +68,7 @@ namespace assignment5
                     this.personBindingSource.EndEdit();
                     this.personTableAdapter.Update(this.personDBDataSet.Person);
 
+                    // Refresh the data grid view
                     this.personTableAdapter.Fill(this.personDBDataSet.Person);
                 }
             }
