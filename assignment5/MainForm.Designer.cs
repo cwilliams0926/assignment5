@@ -311,6 +311,7 @@
             this.addButton.TabIndex = 7;
             this.addButton.Text = "&Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // MainForm
             // 
