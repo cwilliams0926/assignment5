@@ -47,7 +47,7 @@ namespace assignment5
             this.Validate();
             this.personBindingSource.EndEdit(); 
 
-            this.personTableAdapter.Update(this.personDBDataSet.Person);
+            this.tableAdapterManager.UpdateAll(this.personDBDataSet);
         }
     }
 }
