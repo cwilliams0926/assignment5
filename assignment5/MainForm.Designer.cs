@@ -73,6 +73,9 @@
             // 
             this.personDataGridView.AllowUserToAddRows = false;
             this.personDataGridView.AllowUserToDeleteRows = false;
+            this.personDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.personDataGridView.AutoGenerateColumns = false;
             this.personDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.personDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -80,14 +83,15 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.personDataGridView.DataSource = this.personBindingSource;
-            this.personDataGridView.Location = new System.Drawing.Point(21, 42);
+            this.personDataGridView.Location = new System.Drawing.Point(21, 27);
             this.personDataGridView.Name = "personDataGridView";
             this.personDataGridView.ReadOnly = true;
-            this.personDataGridView.Size = new System.Drawing.Size(365, 239);
+            this.personDataGridView.Size = new System.Drawing.Size(754, 254);
             this.personDataGridView.TabIndex = 1;
             // 
             // nameLabel
             // 
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.nameLabel.AutoSize = true;
             this.nameLabel.Location = new System.Drawing.Point(18, 329);
             this.nameLabel.Name = "nameLabel";
@@ -97,6 +101,7 @@
             // 
             // nameTextBox
             // 
+            this.nameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personBindingSource, "Name", true));
             this.nameTextBox.Location = new System.Drawing.Point(21, 345);
             this.nameTextBox.Name = "nameTextBox";
@@ -105,6 +110,7 @@
             // 
             // phoneLabel
             // 
+            this.phoneLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.phoneLabel.AutoSize = true;
             this.phoneLabel.Location = new System.Drawing.Point(155, 329);
             this.phoneLabel.Name = "phoneLabel";
@@ -114,6 +120,7 @@
             // 
             // phoneTextBox
             // 
+            this.phoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personBindingSource, "Phone", true));
             this.phoneTextBox.Location = new System.Drawing.Point(158, 345);
             this.phoneTextBox.Name = "phoneTextBox";
@@ -122,6 +129,7 @@
             // 
             // saveButton
             // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.saveButton.Location = new System.Drawing.Point(296, 343);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
@@ -132,6 +140,7 @@
             // 
             // deleteButton
             // 
+            this.deleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.deleteButton.Location = new System.Drawing.Point(458, 343);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
@@ -164,6 +173,7 @@
             // 
             // addButton
             // 
+            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.addButton.Location = new System.Drawing.Point(377, 343);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
