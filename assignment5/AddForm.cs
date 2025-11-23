@@ -12,7 +12,7 @@ namespace assignment5
 {
     public partial class AddForm : Form
     {
-        public string Name => nameTextBox.Text;
+        public string PersonName => nameTextBox.Text; // Apparently you cannot create a "Name" property...
         public string Phone => phoneTextBox.Text;
         public AddForm()
         {

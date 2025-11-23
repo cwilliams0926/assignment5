@@ -57,7 +57,7 @@ namespace assignment5
                 if (addForm.ShowDialog() == DialogResult.OK)
                 {
                     var newRow = personDBDataSet.Person.NewPersonRow();
-                    newRow.Name = addForm.Name;
+                    newRow.Name = addForm.PersonName;
                     newRow.Phone = addForm.Phone;
 
                     personDBDataSet.Person.Rows.Add(newRow);
